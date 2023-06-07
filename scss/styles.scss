@@ -1,0 +1,11 @@
+@import "base/variables";
+@import "layout/header";
+
+*{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+body{
+    background-color: $verde-fondo;
+}
+
