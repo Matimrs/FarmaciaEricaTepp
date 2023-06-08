@@ -1,3 +1,8 @@
+.linea-vertical {
+  width: 1px;
+  height: 20px;
+  background-color: black; }
+
 .navegacion {
   padding-top: 10px;
   width: 100%;
@@ -14,10 +19,10 @@
   align-items: center; }
 
 .nav-boton {
-  background-color: white;
-  border-radius: 15px;
   padding: 10px;
   margin: 0 auto; }
+  .nav-boton a {
+    text-decoration: none; }
 
 .div-principal {
   background-color: white;
