@@ -1,5 +1,6 @@
 @import "base/variables";
 @import "layout/header";
+@import "inicio";
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -7,5 +8,8 @@
 }
 body{
     background-color: $verde-fondo;
+    text-align: justify;
+    margin: 0;
 }
+
 
