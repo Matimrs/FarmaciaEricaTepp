@@ -47,13 +47,15 @@
 .div-contacto-info {
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
 
 .div-contacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  padding: 20px; }
 
 .div-contacto-item {
   display: flex;
