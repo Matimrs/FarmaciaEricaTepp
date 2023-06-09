@@ -1,39 +1,68 @@
-.div-principal{
-    background-color: white;
-    margin: 20px 0;
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.div-dia{
-    border: 1px solid black;
-    padding: 20px;
-    margin: 10px;
-    width: 100px;
+@import "base/variables";
+
+@mixin flex-column{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
-.div-turno{
+@mixin width-padding-margin{
+    padding: 20px;
+    margin: 20px;
+    width: 100px;
+}
+@mixin flex-abajo{
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    border: 1px solid black;
-    margin: 10px auto;
-    div{
-        margin: 10px;
-        padding: 20px;
-        width: 100px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-       
+    align-items: center;
+    flex-wrap: wrap;
+}
+.div-principal{
+    background-color: $blanco-fondo;
+    margin: 5px 0;
+    padding: 30px;
+    width: 100%;
+    @include flex-column;
+}
+.div-contacto-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.div-contacto{
+    @include flex-column;
+}
+.div-contacto-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3{
+        margin-right: 10px;
     }
 }
+.div-horarios{
+    @include flex-abajo;
+}
+.div-dia{
+    height: 150px;
+    border: 1px solid $verde-fondo;
+    @include width-padding-margin;
+    @include flex-column;
+}
+.div-turnos-mes{
+    @include flex-abajo;
+}
+.div-turno{
+    display: flex;
+    justify-content: center;
+    border: 1px solid $verde-fondo;
+    margin: 10px;
+    div{
+        @include width-padding-margin;
+        @include flex-column;
+    }
+}
+
 #div-subir{
     background-color: white;
     margin: 10px auto;
