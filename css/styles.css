@@ -34,10 +34,13 @@
 #main {
   margin-top: 50px; }
 
+#main {
+  margin-top: 50px; }
+
 .div-principal {
   background-color: #e9ffea;
   margin: 5px 0;
-  padding: 30px;
+  padding: 30px 0px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -101,13 +104,24 @@
     justify-content: center;
     text-align: center; }
 
+.boton {
+  text-decoration: none; }
+  .boton :hover {
+    text-decoration: underline; }
+
 #div-subir {
   background-color: white;
   margin: 10px auto;
   width: 60px;
   padding: 0 20px;
   border-radius: 15px;
-  text-align: center; }
+  text-align: center;
+  transition: 1s; }
+  #div-subir a {
+    text-decoration: none; }
+
+#div-subir:hover {
+  transform: scale(1.1); }
 
 * {
   font-family: 'Poppins', sans-serif;
@@ -117,3 +131,6 @@ body {
   background-color: #6daf73;
   text-align: justify;
   margin: 0; }
+
+html {
+  scroll-behavior: smooth; }
