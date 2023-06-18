@@ -29,12 +29,14 @@
 }
 .div-contacto-info{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0 15%;
 }
 .div-contacto{
     @include flex-column;
+    align-items: center;
     padding: 20px;
 }
 .div-contacto-item{
@@ -72,6 +74,23 @@
     :hover{
         text-decoration: underline;
     }
+}
+@mixin botones{
+    padding: 0px 20px;
+    border-radius: 50px;
+    width: 100px;
+    h3{
+        color: white;
+    }
+}
+.maps{
+    @include botones;
+    background-color: $rojo-maps;
+}
+.wpp{
+    @include botones;
+    background-color: $verde-wpp;
+    border: solid 5px white;
 }
 #div-subir{
     background-color: white;

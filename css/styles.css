@@ -49,15 +49,17 @@
 
 .div-contacto-info {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin: 0 15%; }
 
 .div-contacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items: center;
   padding: 20px; }
 
 .div-contacto-item {
@@ -108,6 +110,23 @@
   text-decoration: none; }
   .boton :hover {
     text-decoration: underline; }
+
+.maps {
+  padding: 0px 20px;
+  border-radius: 50px;
+  width: 100px;
+  background-color: #DB4437; }
+  .maps h3 {
+    color: white; }
+
+.wpp {
+  padding: 0px 20px;
+  border-radius: 50px;
+  width: 100px;
+  background-color: #25D366;
+  border: solid 5px white; }
+  .wpp h3 {
+    color: white; }
 
 #div-subir {
   background-color: white;
