@@ -18,7 +18,10 @@
     flex-wrap: wrap;
 }
 #main{
-    margin-top: 50px;
+   margin-top: 50px;
+}
+h1{
+    font-weight: 1000;
 }
 .div-principal{
     background-color: $blanco-fondo;
@@ -69,12 +72,6 @@
         @include flex-column;
     }
 }
-.boton{
-    text-decoration: none;
-    :hover{
-        text-decoration: underline;
-    }
-}
 @mixin botones{
     padding: 0px 20px;
     border-radius: 50px;
@@ -92,16 +89,33 @@
     background-color: $verde-wpp;
     border: solid 5px white;
 }
+.boton{
+    text-decoration: none;
+    transition: 1s;
+    box-shadow: 2px 2px 2px $verde-fondo;
+    :hover{
+        text-decoration: underline;
+    }
+}
+.boton:hover{
+    transform: scale(1.05);
+}
 #div-subir{
-    background-color: white;
+    position: sticky;
+    bottom: 0;
+    background-color: $verde-fondo;
     margin: 10px auto;
-    width: 60px;
     padding: 0 20px;
-    border-radius: 15px;
+    width: 60px;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 18px;
     text-align: center;
     transition: 1s;
     a{
         text-decoration: none;
+    }
+    h3{
+       margin: 0;
     }
 }
 #div-subir:hover{
