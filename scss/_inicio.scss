@@ -32,7 +32,7 @@ h1{
 }
 .div-contacto-info{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin: 0 15%;
@@ -64,11 +64,14 @@ h1{
 }
 .div-turno{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     border: 1px solid $verde-fondo;
     margin: 10px;
     div{
-        @include width-padding-margin;
+        padding: 0 20px;
+        margin: 0 20px;
+        width: 100px;
         @include flex-column;
     }
 }
@@ -91,18 +94,17 @@ h1{
 }
 .boton{
     text-decoration: none;
-    transition: 1s;
-    box-shadow: 2px 2px 2px $verde-fondo;
-    :hover{
-        text-decoration: underline;
-    }
+    transition:  1s;
+    box-shadow: 2px 2px 2px grey;
 }
 .boton:hover{
     transform: scale(1.05);
+    h3{
+        text-decoration: underline;
+    }
 }
 #div-subir{
     position: sticky;
-    bottom: 0;
     background-color: $verde-fondo;
     margin: 10px auto;
     padding: 0 20px;
@@ -120,4 +122,17 @@ h1{
 }
 #div-subir:hover{
     transform: scale(1.1);
+}
+@media(min-width: 382px){
+    .div-turno{
+        flex-direction: row;
+    }
+}
+@media (min-width: 710px){
+    .div-contacto-info{
+        justify-content: space-between;
+    }
+    #main{
+        margin-top: 70px;
+    }
 }
