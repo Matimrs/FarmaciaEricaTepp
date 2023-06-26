@@ -148,6 +148,7 @@ h1 {
 
 #div-subir {
   position: sticky;
+  bottom: 0;
   background-color: #68ce70;
   margin: 10px auto;
   padding: 0 20px;
