@@ -56,11 +56,15 @@ h1{
 .div-horarios{
     @include flex-abajo;
 }
+@mixin box-shadow{
+    box-shadow: 1px 1px 5px grey;
+}
 .div-dia{
     height: 150px;
     border: 1px solid $verde-fondo;
     @include width-padding-margin;
     @include flex-column;
+    @include box-shadow;
 }
 .div-turnos-mes{
     @include flex-abajo;
@@ -71,6 +75,7 @@ h1{
     justify-content: center;
     border: 1px solid $verde-fondo;
     margin: 10px;
+    @include box-shadow;
     div{
         padding: 0 20px;
         margin: 0 20px;
@@ -81,7 +86,7 @@ h1{
 @mixin botones{
     padding: 0px 20px;
     border-radius: 50px;
-    width: 100px;
+    width: 150px;
     h3{
         color: white;
     }
@@ -96,15 +101,21 @@ h1{
     border: solid 5px white;
 }
 .boton{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     transition:  1s;
     box-shadow: 2px 2px 2px grey;
+    img{
+        height: 30px;
+        margin: 0 10px;
+    }
 }
 .boton:hover{
     transform: scale(1.05);
-    h3{
-        text-decoration: underline;
-    }
 }
 #div-subir{
     position: sticky;
@@ -132,7 +143,7 @@ h1{
         flex-direction: row;
     }
 }
-@media (min-width: 710px){
+@media (min-width: 797px){
     .div-contacto-info{
         justify-content: space-between;
     }
