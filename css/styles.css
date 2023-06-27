@@ -3,7 +3,8 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  justify-items: center; }
+  justify-items: center;
+  font-weight: bold; }
 
 .navegacion {
   background-color: #68ce70;
