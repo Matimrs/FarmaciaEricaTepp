@@ -1,0 +1,9 @@
+@import "../base/variables";
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: center;
+}
