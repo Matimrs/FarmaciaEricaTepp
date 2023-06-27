@@ -6,10 +6,9 @@
     justify-content: center;
     text-align: center;
 }
-@mixin width-padding-margin{
+@mixin padding-margin{
     padding: 20px;
     margin: 20px;
-    width: 130px;
 }
 @mixin flex-abajo{
     display: flex;
@@ -55,14 +54,16 @@ h1{
 }
 .div-horarios{
     @include flex-abajo;
+    flex-direction: row;
 }
 @mixin box-shadow{
     box-shadow: 0px 0px 5px grey;
 }
 .div-dia{
-    height: 210px;
+    height: 200px;
+    width: 200px;
     border: 1px solid $verde-fondo;
-    @include width-padding-margin;
+    @include padding-margin;
     @include flex-column;
     @include box-shadow;
 }

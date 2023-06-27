@@ -94,14 +94,15 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  flex-direction: row; }
 
 .div-dia {
-  height: 210px;
+  height: 200px;
+  width: 200px;
   border: 1px solid #68ce70;
   padding: 20px;
   margin: 20px;
-  width: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
