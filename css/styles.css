@@ -97,16 +97,16 @@ h1 {
   flex-wrap: wrap; }
 
 .div-dia {
-  height: 150px;
+  height: 210px;
   border: 1px solid #68ce70;
   padding: 20px;
   margin: 20px;
-  width: 100px;
+  width: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  box-shadow: 1px 1px 5px grey; }
+  box-shadow: 0px 0px 5px grey; }
 
 .div-turnos-mes {
   display: flex;
@@ -120,7 +120,7 @@ h1 {
   justify-content: center;
   border: 1px solid #68ce70;
   margin: 10px;
-  box-shadow: 1px 1px 5px grey; }
+  box-shadow: 0px 0px 5px grey; }
   .div-turno div {
     padding: 0 20px;
     margin: 0 20px;

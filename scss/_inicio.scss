@@ -9,7 +9,7 @@
 @mixin width-padding-margin{
     padding: 20px;
     margin: 20px;
-    width: 100px;
+    width: 130px;
 }
 @mixin flex-abajo{
     display: flex;
@@ -57,10 +57,10 @@ h1{
     @include flex-abajo;
 }
 @mixin box-shadow{
-    box-shadow: 1px 1px 5px grey;
+    box-shadow: 0px 0px 5px grey;
 }
 .div-dia{
-    height: 150px;
+    height: 210px;
     border: 1px solid $verde-fondo;
     @include width-padding-margin;
     @include flex-column;
