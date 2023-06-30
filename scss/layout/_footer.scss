@@ -3,8 +3,14 @@
 footer{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
     font-weight: bold;
+    div{
+        width: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 }
